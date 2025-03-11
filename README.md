@@ -175,7 +175,38 @@ Welcome to the *Ecommerce Follow Along Project*! This hands-on project focuses o
 1. Create a **backend endpoint** for fetching cart data.
 2. Write an endpoint to **retrieve products** inside the cart for a user.
 
+
+## ⭐ Milestone 19: Cart Page
+- Created a **Cart Page** to display products in the user's cart.
+- Added **+ and - buttons** to adjust product quantities.
+- Implemented **PUT /cart/update-quantity** endpoint to update product quantities in the cart, ensuring seamless frontend-backend communication.
+
+---
+
+## ⭐ Milestone 20: User Profile Page
+- Created a **GET /user/profile** endpoint to fetch user details (name, email, profile photo, addresses).
+- Implemented functionality to send user data via email.
+- Designed a **Profile Page** displaying the user’s photo, name, and email, with addresses in a separate section.
+- If no addresses are found, a **"No address found"** message is shown, along with an **"Add Address"** button.
+
+---
+
+## ⭐ Milestone 21: Address Form
+- Created a **frontend form** to collect user addresses.
+- Included fields: **Country, City, Address Line 1, Address Line 2, Zip Code, Address Type**.
+- Stored input values in **state** for efficient data management.
+- Implemented **navigation** from the profile page to the address form.
+- On form submission, data is currently logged in the console (backend integration planned).
+- Added **form validation** for required fields to ensure a smooth user experience.
+
+---
+
+## ⭐ Milestone 22: Storing User Addresses
+- Created a **POST /user/address** endpoint to store addresses in the user profile in the database.
+- The endpoint receives address data from the frontend form and adds it to the **address array** in the user collection.
+
 ---
 
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
+
 
