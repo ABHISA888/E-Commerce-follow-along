@@ -207,6 +207,18 @@ Welcome to the *Ecommerce Follow Along Project*! This hands-on project focuses o
 
 ---
 
+
+## ⭐ Milestone 23: Select Address & Product Schema
+- Created a **select address page** in the frontend for users to choose their saved addresses.
+- Developed the **product schema** in the backend for handling orders.
+
+---
+
+## ⭐ Milestone 24: Order Confirmation Page
+- Built an **order confirmation page** in the frontend.
+- Displays **ordered products**, **selected address**, and **total price details**.
+
+
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
 
 
