@@ -218,7 +218,17 @@ Welcome to the *Ecommerce Follow Along Project*! This hands-on project focuses o
 - Built an **order confirmation page** in the frontend.
 - Displays **ordered products**, **selected address**, and **total price details**.
 
+## ⭐ Milestone 25: Store Order Details in Database
+- Created an **API endpoint** to receive product, user, and address details.
+- Retrieved the **_id** of the user using their email.
+- For each product, an **individual order** was created with the same address.
+- Stored **order details** in MongoDB using the existing **order schema**.
 
+## ⭐ Milestone 26: Retrieve User Orders
+- Created an **API endpoint** to receive the user's email.
+- Retrieved the **_id** of the user using their email.
+- Fetched all **orders related to that user** using their _id.
+- Sent the user's **order history** in the response.
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
 
 
