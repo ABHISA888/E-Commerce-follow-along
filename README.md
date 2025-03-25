@@ -229,6 +229,32 @@ Welcome to the *Ecommerce Follow Along Project*! This hands-on project focuses o
 - Retrieved the **_id** of the user using their email.
 - Fetched all **orders related to that user** using their _id.
 - Sent the user's **order history** in the response.
+
+# ⭐ Milestone 27: Create My Orders Page  
+## Learning Goals 🎯  
+By the end of this milestone, you will:  
+- Create a frontend page that will display all the user orders.  
+
+## Steps for Milestone 27 📝  
+1. Create a **My Orders** page.  
+2. Send a **GET request** to the `my-orders` endpoint created in the previous milestone.  
+3. Pass the **user's email** to the endpoint to fetch all user orders.  
+4. Display all the retrieved **user orders** on the page.  
+5. Add the **My Orders** page to the navbar for better navigation.  
+
+---
+
+# ⭐ Milestone 28: Cancel Order Feature  
+## Learning Goals 🎯  
+By the end of this milestone, you will:  
+- Allow users to **cancel** their placed orders.  
+
+## Steps for Milestone 28 📝  
+1. In the **My Orders** page, add a **"Cancel Order"** button for each order.  
+2. If an order is **already canceled**, the button should not be displayed.  
+3. Create an **API endpoint** that will receive the `order_id`.  
+4. Fetch the order using this `order_id`, update its status to **"Canceled"**, and save the changes.  
+
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
 
 
