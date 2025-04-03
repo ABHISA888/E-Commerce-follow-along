@@ -255,6 +255,15 @@ By the end of this milestone, you will:
 3. Create an **API endpoint** that will receive the `order_id`.  
 4. Fetch the order using this `order_id`, update its status to **"Canceled"**, and save the changes.  
 
+# ⭐ Milestone 28:
+
+## 📝 Steps for Milestone 29: PayPal Integration  
+1. Create a **PayPal Developer Account** and get **API credentials**.  
+2. Install and configure the **PayPal SDK** in your application.  
+3. Implement a **checkout page** where users can make payments using PayPal.  
+4. Handle **successful** and **failed** transactions appropriately.  
+5. Store transaction details in your database for future reference.  
+
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
 
 
