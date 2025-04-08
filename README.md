@@ -281,6 +281,18 @@ This is a continuation of Milestone 29 where you set up your PayPal account and 
    ```bash
    npm install @paypal/react-paypal-js
 
+# 🌟 Milestone 31: Global State Management with Redux
+
+## 🎯 Learning Goals:
+- Learn how to use Redux for global state management.
+- Implement a Redux store to manage global states such as user email.
+
+## 📝 Steps:
+
+1. **Install Required Packages**
+   ```bash
+   npm install react-redux @reduxjs/toolkit
+
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
 
 
