@@ -2,13 +2,16 @@ import CartProduct from '../components/CartProduct'
 import Nav from '../components/navbar';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
 const Cart = () => {
 
     const [products, setProducts] = useState([]);
     const navigate = useNavigate()
+    const email = useSelector((state) => state.user.email); // Get email from Redux store
     useEffect(() => {
+        if (!email) return;
         fetch(`http://localhost:8000/api/v2/product/cartproducts?email=${'abhisa8888@gmail.com'}`)
           .then((res) => {
             if (!res.ok) {
