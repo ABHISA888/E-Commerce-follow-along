@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const Order = require('../model/Order'); 
 const User = require('../model/user');   
-
-router.post('/place-order', async (req, res) => {
+const { isAuthenticatedUser } = require('../middleware/auth');
+router.post('/place-order',isAuthenticatedUser, async (req, res) => {
     try {
         const { email, orderItems, shippingAddress } = req.body;
 
@@ -86,7 +86,7 @@ router.post('/place-order', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-router.get('/my-orders', async (req, res) => {
+router.get('/my-orders',isAuthenticatedUser, async (req, res) => {
     try {
         const { email } = req.query;
 
@@ -107,7 +107,7 @@ router.get('/my-orders', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-router.patch('/cancel-order/:orderId', async (req, res) => {
+router.patch('/cancel-order/:orderId',isAuthenticatedUser, async (req, res) => {
     try {
         const { orderId } = req.params;
         const order = await Order.findById(orderId);

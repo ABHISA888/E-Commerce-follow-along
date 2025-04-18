@@ -1,21 +1,26 @@
 import { React, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setemail } from "../store/userAction";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import {setemail} from "../store/userAction";
+import { useDispatch } from "react-redux";
+
+axios.defaults.withCredentials = true;
 const Login = () => {
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [visible, setVisible] = useState(false);
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Email:", email);
         console.log("Password:", password);
+
+        dispatch(setemail(email));
+        navigate("/");
     };
 
     return (

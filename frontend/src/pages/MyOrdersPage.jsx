@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from '../axiosConfig'; // Adjust the import path as necessary
 import Nav from '../components/navbar'
 import { useSelector } from 'react-redux'; // Import useSelector to access Redux state
 const MyOrdersPage = () => {
@@ -14,7 +14,7 @@ const MyOrdersPage = () => {
         try {
             setLoading(true);
             setError('');
-            const response = await axios.get('http://localhost:8000/api/v2/orders/my-orders', {
+            const response = await axios.get('/api/v2/orders/my-orders', {
                 params: { email: email },
             });
             setOrders(response.data.orders);
@@ -27,7 +27,7 @@ const MyOrdersPage = () => {
 
     const cancelOrder = async (orderId) => {
         try {
-            const response = await axios.patch(`http://localhost:8000/api/v2/orders/cancel-order/${orderId}`);
+            const response = await axios.patch(`/api/v2/orders/cancel-order/${orderId}`);
             setOrders((prevOrders) =>
                 prevOrders.map((order) =>
                     order._id === orderId ? { ...order, status: response.data.order.status } : order
