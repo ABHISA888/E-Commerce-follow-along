@@ -309,6 +309,16 @@ Today, you’ll use Redux to store and access the user's email across all pages.
    const dispatch = useDispatch();
    dispatch(setEmail(emailInput));
 
+## ⭐ Milestone 33: Create JWT token :
+-Did sign method to create an JWT token with mail and ID.
+-Used maxage to set time limit for one hour.
+-Finally added cookies to store it in browser.
+
+## ⭐ Milestone 34: Sending tokens to the server :
+-Getting token from browser cookies and sending it to the server.
+-Creating a middleware function for valdidating the JWT token.
+
+
 
 This concludes the roadmap for our **Ecommerce Follow Along Project**! Happy coding! 🚀
 
